@@ -1,0 +1,24 @@
+{
+  "family": [
+    {
+      "name": "Daniel",
+      "age": 35,
+      "hobbies": ["Climbing", "Reading", "Traveling"]
+    },
+    {
+      "name": "Sarah",
+      "age": 33,
+      "hobbies": ["Cooking", "Yoga", "Photography"]
+    },
+    {
+      "name": "Emily",
+      "age": 10,
+      "hobbies": ["Drawing", "Dancing", "Playing with friends"]
+    },
+    {
+      "name": "Michael",
+      "age": 8,
+      "hobbies": ["Soccer", "Video Games", "Building Legos"]
+    }
+  ]
+}
