@@ -1,3 +1,9 @@
+const nextConfig = {
+  reactStrictMode: true,
+  experimental: { typedRoutes: true },
+};
+export default nextConfig;
+/*
 // next.config.mjs (ESM)
 import nextPWA from 'next-pwa';
 
@@ -13,3 +19,4 @@ const nextConfig = {
 };
 
 export default withPWA(nextConfig);
+*/
