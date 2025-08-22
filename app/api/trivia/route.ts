@@ -1,3 +1,13 @@
+import { NextResponse } from "next/server";
+
+export async function POST() {
+  return NextResponse.json(
+    { error: "Trivia API disabled until OpenAI is configured." },
+    { status: 501 }
+  );
+}
+
+/*
 import { NextResponse } from 'next/server';
 import { z } from 'zod';
 import { getOpenAIClient } from '@/lib/openai';
@@ -40,3 +50,4 @@ export async function POST(req) {
     return NextResponse.json({ error: "Failed to generate trivia questions" }, { status: 502 });
   }
 }
+  */
