@@ -17,11 +17,13 @@ const ClimbPage = () => {
 	const playerRef = useRef<any>(null);
 
 	useEffect(() => {
-		if (!canvasRef.current) return;
+		const canvas = canvasRef.current; // Snapshot the ref value
+
+		if (!canvas) return;
 
 		// Init kaboom with the canvas
 		const k = kaboom({
-			canvas: canvasRef.current,
+			canvas,
 			width: WIDTH,
 			height: HEIGHT,
 			background: [240, 240, 255],
@@ -70,8 +72,8 @@ const ClimbPage = () => {
 		});
 
 		return () => {
-			// Kaboom doesn't have a destroy method, but you can clear the canvas
-			canvasRef.current?.getContext("2d")?.clearRect(0, 0, WIDTH, HEIGHT);
+			// Use the snapshotted canvas variable here
+			canvas?.getContext("2d")?.clearRect(0, 0, WIDTH, HEIGHT);
 		};
 	}, []);
 
